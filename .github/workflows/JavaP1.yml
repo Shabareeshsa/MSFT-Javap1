@@ -1,4 +1,4 @@
-name: MSFT java app for github actions
+name: MSFT java app for github actions 1
 on: push
 jobs:
     First-job:

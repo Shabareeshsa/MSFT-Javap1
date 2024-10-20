@@ -14,7 +14,6 @@ jobs:
               name: upload the artifact
               with:
                 name: static-site
-                path : .next/
-
+                path : /home/runner/work/MSFT-Javap1/MSFT-Javap1/.next
 
             

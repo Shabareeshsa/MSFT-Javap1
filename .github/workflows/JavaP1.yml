@@ -10,7 +10,7 @@ jobs:
               name: Installing the dependencies
             - run: npm run build
               name: Building the project
-            - uses: actions/upload-artifact@v4
+            - uses: actions/upload-artifact@v3
               name: upload the artifact
               with:
                 name: my-artifact

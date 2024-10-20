@@ -13,7 +13,7 @@ jobs:
             - uses: actions/upload-artifact@v3
               name: upload the artifact
               with:
-                name: my-artifact
+                name: static-site
                 path : .next/
 
 

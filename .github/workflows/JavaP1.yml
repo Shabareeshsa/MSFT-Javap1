@@ -1,0 +1,20 @@
+name: MSFT java app for github actions
+on: push
+jobs:
+    First-job:
+        runs-on: ubuntu-latest
+        steps: 
+            - uses: actions/checkout@v3
+              name: Cloning the git repo
+            - run: npm install
+              name: Installing the dependencies
+            - run: npm run build
+              name: Building the project
+            - uses: actions/download-artifact@v4
+              name: Download the artifact
+              with:
+                name: my-artifact
+                path : .next/
+
+
+            
